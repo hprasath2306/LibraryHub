@@ -27,10 +27,6 @@ export const Carousel = () => {
   }, []);
 
   if(error){
-    books[0] = {
-      id: 1,
-      title: "The Da Vinci Code",
-    }
     return (
       <div className="container mt-5">
         <div className="alert alert-danger" role="alert">
