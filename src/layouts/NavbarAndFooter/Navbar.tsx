@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import {
   SignedIn,
   SignedOut,
+  SignIn,
   SignInButton,
   useAuth,
   UserButton,
@@ -56,13 +57,14 @@ export const Navbar = () => {
           <ul className="navbar-nav ms-auto">
             <li className="nav-item m-1">
               <SignedOut>
-                <a
-                  href="https://large-grubworm-54.accounts.dev/sign-in?redirect_url=http%3A%2F%2Flocalhost%3A3000%2Fhome"
+                {/* <a
+                  href="https://large-grubworm-54.accounts.dev/sign-in?redirect_url=http%3A%2F%2Flibraryhub.vercel.app%3A%2Fhome"
                   type="button"
                   className="btn btn-outline-light"
                 >
                   Sign in
-                </a>
+                </a> */}
+                <SignInButton />
               </SignedOut>
               <SignedIn>
                 <UserButton />
