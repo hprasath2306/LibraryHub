@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import BookModel from "../../models/BookModel";
 import { LeaveAReview } from "../utils/LeaveAReview";
+import { SignInButton } from "@clerk/clerk-react";
 
 export const CheckoutAndReviewBox: React.FC<{
   book: BookModel | undefined,
@@ -34,9 +35,7 @@ export const CheckoutAndReviewBox: React.FC<{
       }
     }
     return (
-      <a href="https://large-grubworm-54.accounts.dev/sign-in?redirect_url=http%3A%2F%2Flocalhost%3A3000%2Fhome" className="btn btn-success btn-lg">
-        Sign in
-      </a>
+      <SignInButton />
     );
   }
   function reviewRender() {
