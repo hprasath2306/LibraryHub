@@ -198,7 +198,7 @@ export const BookCheckoutPage = () => {
       bookId,
       reviewDescription
     );
-    const url = `https://lms-backend-im3n.onrender.com/reviews/secure?userEmail=${user?.emailAddresses[0].emailAddress}`;
+    const url = `https://lms-backend-im3n.onrender.com/api/reviews/secure?userEmail=${user?.emailAddresses[0].emailAddress}`;
     const requestOptions = {
       method: "POST",
       headers: {
